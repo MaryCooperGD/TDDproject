@@ -1,0 +1,23 @@
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: foo
+      auto-offset-reset: earliest
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring:
+          json:
+            trusted:
+              packages: com.springmiddleware.entities
+
+app:
+  topic:
+    info: info
+    error: error
+
+logging:
+  level:
+    root: ERROR
+    org.springframework.web: ERROR
+    com.memorynotfound: DEBUG

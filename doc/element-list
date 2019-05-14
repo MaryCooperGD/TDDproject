@@ -1,0 +1,9 @@
+com.example.demo
+com.springmiddleware.controllers
+com.springmiddleware.entities
+com.springmiddleware.errors
+com.springmiddleware.repository
+com.springmiddleware.service.impl
+com.springmiddleware.services
+com.springmiddleware.utilities
+com.springmiddlware.main
